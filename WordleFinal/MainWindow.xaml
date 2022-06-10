@@ -1,0 +1,27 @@
+﻿<Window x:Class="WordleFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordleFinal"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   <Grid Background="#58606e">
+      <Label x:Name="TitleText" Content="John's C# Wordle:" HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top" Foreground="#FFE2C5BB" FontWeight="Bold" FontFamily="Cooper Black" FontSize="18"/>
+
+      <Label x:Name="Letter1" Width="76" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="95" Foreground="#FFE2C5BB" Content="" HorizontalAlignment="Left" Margin="80,175,0,0" VerticalAlignment="Top" FontSize="70"/>
+      <Rectangle x:Name="Rect1" Fill="#FFFFFF" HorizontalAlignment="Left" Height="8" Margin="80,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+
+      <Label x:Name="Letter2" Width="76" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="95" Foreground="#FFE2C5BB" Content="" HorizontalAlignment="Left" Margin="220,175,0,0" VerticalAlignment="Top" FontSize="70"/>
+      <Rectangle x:Name="Rect2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="8" Margin="220,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+
+      <Label x:Name="Letter3" Width="76" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="95" Foreground="#FFE2C5BB" Content="" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" FontSize="70"/>
+      <Rectangle x:Name="Rect3" Fill="#FFFFFF" HorizontalAlignment="Center" Height="8" Margin="0,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+
+      <Label x:Name="Letter4" Width="76" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="95" Foreground="#FFE2C5BB" Content="" HorizontalAlignment="Left" Margin="500,175,0,0" VerticalAlignment="Top" FontSize="70"/>
+      <Rectangle x:Name="Rect4" Fill="#FFFFFF" HorizontalAlignment="Left" Height="8" Margin="500,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+
+      <Label x:Name="Letter5" Width="76" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="95" Foreground="#FFE2C5BB" Content="" HorizontalAlignment="Left" Margin="650,175,0,0" VerticalAlignment="Top" FontSize="70"/>
+      <Rectangle x:Name="Rect5" Fill="#FFFFFF" HorizontalAlignment="Left" Height="8" Margin="650,275,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+   </Grid>
+</Window>
