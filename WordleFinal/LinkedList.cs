@@ -19,20 +19,6 @@ namespace WordleFinal
 
          head = toAdd;
       }
-      public String getWord()
-      {
-         String finalString = "";
-
-         Node current = head;
-
-         while (current != null)
-         {
-            finalString += current.data;
-            current = current.next;
-         }
-
-         return finalString;
-      }
       public Node getHead()
       {
          return head;

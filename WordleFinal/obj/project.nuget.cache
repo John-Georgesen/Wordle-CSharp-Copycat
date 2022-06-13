@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7TFGSYXYxBNN+4P3Qk3ZZHjYD/4mt4gdftnWI/9J5uqxl4aO9n3y2y8Wv6hWuzZ3RmC4wjKo/zLOSmQzvzQi6A==",
+  "dgSpecHash": "MX3ZWrz+ALdIEMZMYHJBQV8CvGmXtRev7YJ54tyGSzvw6haBRHcRz/5vdwMptfIh620s7jUztEO6UFCWc935TA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jgeorgesen\\Desktop\\C# Workspace\\WordleFinal\\WordleFinal\\WordleFinal.csproj",
+  "projectFilePath": "C:\\Users\\jgeorgesen\\Desktop\\GitHub\\Wordle-CSharp-Copycat\\WordleFinal\\WordleFinal.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

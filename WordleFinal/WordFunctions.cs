@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,27 +16,50 @@ namespace WordleFinal
          guessWord = "stall";
          return guessWord;
       }
-      public bool[] checkWord()
+      public int[] checkWord()
       {
-         bool[] result = { false, false, false, false, false };
+         int[] result = { 0, 0, 0, 0, 0 };
 
-         LinkedList setWordList = breakdownGuessWord(guessWord);
-         LinkedList userWordList = list;
+         LinkedList toGuessList = breakdownGuessWord(guessWord);
+         //this list is to make sure each character can only be guessed once
+         bool[] guessedAlready = { false, false, false, false, false };
 
-         Node currentSet = setWordList.getHead();
-         Node currentUser = userWordList.getHead();
+         LinkedList userGuessList = list;
+
+         Node currentSetHead = toGuessList.getHead();
+         Node currentUserHead = userGuessList.getHead();
 
          int i = 0;
-         while (currentSet != null)
+         while (currentSetHead != null)
          {
             
-            if(currentSet.data.Equals(currentUser.data))
+            if(currentSetHead.data.Equals(currentUserHead.data))
             {
-               result[i] = true;
+               result[i] = 2;
+               guessedAlready[i] = true;
+            }
+            else
+            {
+               LinkedList secondarySet = toGuessList;
+               Node secondarySetHead = secondarySet.getHead();
+
+
+               int j = 0;
+               while(secondarySetHead != null)
+               {
+                  if(currentUserHead.data.Equals(secondarySetHead.data) && guessedAlready[j] == false)
+                  {
+                     result[i] = 1;
+                     guessedAlready[j] = true;
+                     break;
+                  }
+                  secondarySetHead = secondarySetHead.next;
+                  j++;
+               }
             }
 
-            currentSet = currentSet.next;
-            currentUser = currentUser.next;
+            currentSetHead = currentSetHead.next;
+            currentUserHead = currentUserHead.next;
             i++;
          }
 
@@ -61,9 +85,22 @@ namespace WordleFinal
          list.add(two.ToLower());
          list.add(one.ToLower());
       }
-      public string getWord()
+      public String getUserWord()
       {
-         return list.getWord();
+         String word = "";
+         Node wordHead = list.getHead();
+
+         while(wordHead != null)
+         {
+            word += wordHead.data;
+            wordHead = wordHead.next;
+         }
+
+         return word;
+      }
+      public String getGuessString()
+      {
+         return guessWord;
       }
    }
 }

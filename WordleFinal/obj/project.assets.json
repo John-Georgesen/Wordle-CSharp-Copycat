@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jgeorgesen\\Desktop\\C# Workspace\\WordleFinal\\WordleFinal\\WordleFinal.csproj",
+      "projectUniqueName": "C:\\Users\\jgeorgesen\\Desktop\\GitHub\\Wordle-CSharp-Copycat\\WordleFinal\\WordleFinal.csproj",
       "projectName": "WordleFinal",
-      "projectPath": "C:\\Users\\jgeorgesen\\Desktop\\C# Workspace\\WordleFinal\\WordleFinal\\WordleFinal.csproj",
+      "projectPath": "C:\\Users\\jgeorgesen\\Desktop\\GitHub\\Wordle-CSharp-Copycat\\WordleFinal\\WordleFinal.csproj",
       "packagesPath": "C:\\Users\\jgeorgesen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jgeorgesen\\Desktop\\C# Workspace\\WordleFinal\\WordleFinal\\obj\\",
+      "outputPath": "C:\\Users\\jgeorgesen\\Desktop\\GitHub\\Wordle-CSharp-Copycat\\WordleFinal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

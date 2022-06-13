@@ -19,3 +19,24 @@ C:\Users\jgeorgesen\Desktop\C# Workspace\WordleFinal\WordleFinal\obj\Debug\net6.
 C:\Users\jgeorgesen\Desktop\C# Workspace\WordleFinal\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.pdb
 C:\Users\jgeorgesen\Desktop\C# Workspace\WordleFinal\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.genruntimeconfig.cache
 C:\Users\jgeorgesen\Desktop\C# Workspace\WordleFinal\WordleFinal\obj\Debug\net6.0-windows\ref\WordleFinal.dll
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\WordleFinal.exe
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\WordleFinal.deps.json
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\WordleFinal.runtimeconfig.json
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\WordleFinal.dll
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\WordleFinal.pdb
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.csproj.AssemblyReference.cache
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal_MarkupCompile.cache
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal_MarkupCompile.lref
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.g.resources
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.AssemblyInfoInputs.cache
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.AssemblyInfo.cs
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.csproj.CoreCompileInputs.cache
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.dll
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\refint\WordleFinal.dll
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.pdb
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.genruntimeconfig.cache
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\ref\WordleFinal.dll
