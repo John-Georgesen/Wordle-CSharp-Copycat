@@ -40,3 +40,4 @@ C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\n
 C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.pdb
 C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\WordleFinal.genruntimeconfig.cache
 C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\obj\Debug\net6.0-windows\ref\WordleFinal.dll
+C:\Users\jgeorgesen\Desktop\GitHub\Wordle-CSharp-Copycat\WordleFinal\bin\Debug\net6.0-windows\AvailableWords.txt

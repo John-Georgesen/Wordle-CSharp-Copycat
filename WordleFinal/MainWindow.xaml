@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WordleFinal"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="1000" Width="820">
    <Grid Background="#3f404f" Margin="0,0,0,-724">
       <Label x:Name="TitleText" Content="John's C# Wordle:" HorizontalAlignment="Left" Margin="32,62,0,0" VerticalAlignment="Top" Foreground="#eda164" FontWeight="Bold" FontFamily="Cooper Black" FontSize="32"/>

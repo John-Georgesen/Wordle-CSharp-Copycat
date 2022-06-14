@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -28,17 +29,24 @@ namespace WordleFinal
       {
          InitializeComponent();
 
+         //init necessary class
          func = new WordFunctions();
+
+         //create the word to guess
          guessWord = func.createWord();
 
+         //get user input from keyboard
          this.KeyDown += new KeyEventHandler(OnButtonKeyDown);
       }
       private void OnButtonKeyDown(object sender, KeyEventArgs key)
       {
+         //add letters to boxes based on turn
          if (turn == 0)
          {
+            //if letter is entered
             if ((key.Key >= Key.A && key.Key <= Key.Z))
             {
+               //make sure box is empty
                if (Turn1Letter1.Content == "")
                {
                   Turn1Letter1.Content = key.Key.ToString();
@@ -61,8 +69,10 @@ namespace WordleFinal
                }
                else { }
             }
+            //if backspace is entered
             if (key.Key == Key.Back)
             {
+               //make sure the box is populated
                if (Turn1Letter5.Content != "")
                {
                   Turn1Letter5.Content = "";
@@ -285,10 +295,10 @@ namespace WordleFinal
                }
             }
          }
-
+         //when user pressed enter, decide what to do based on turn
          if (key.Key == Key.Enter)
          {
-            if(turn == 0)
+            if (turn == 0)
             {
                int[] checkList = getChecklist(1);
 
@@ -333,29 +343,29 @@ namespace WordleFinal
                }
                if (checkList[4] == 1)
                {
-                  Turn1Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
+                  Turn1Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
                }
 
                //wrong
                if (checkList[0] == 0)
                {
-                  Turn1Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn1Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[1] == 0)
                {
-                  Turn1Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn1Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[2] == 0)
                {
-                  Turn1Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn1Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[3] == 0)
                {
-                  Turn1Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn1Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[4] == 0)
                {
-                  Turn1Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn1Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
             }
             if (turn == 1)
@@ -403,29 +413,29 @@ namespace WordleFinal
                }
                if (checkList[4] == 1)
                {
-                  Turn2Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
+                  Turn2Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
                }
 
                //wrong
                if (checkList[0] == 0)
                {
-                  Turn2Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn2Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[1] == 0)
                {
-                  Turn2Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn2Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[2] == 0)
                {
-                  Turn2Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn2Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[3] == 0)
                {
-                  Turn2Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn2Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[4] == 0)
                {
-                  Turn2Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn2Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
             }
             if (turn == 2)
@@ -473,29 +483,29 @@ namespace WordleFinal
                }
                if (checkList[4] == 1)
                {
-                  Turn3Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
+                  Turn3Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
                }
 
                //wrong
                if (checkList[0] == 0)
                {
-                  Turn3Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn3Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[1] == 0)
                {
-                  Turn3Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn3Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[2] == 0)
                {
-                  Turn3Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn3Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[3] == 0)
                {
-                  Turn3Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn3Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[4] == 0)
                {
-                  Turn3Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn3Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
             }
             if (turn == 3)
@@ -543,29 +553,29 @@ namespace WordleFinal
                }
                if (checkList[4] == 1)
                {
-                  Turn4Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
+                  Turn4Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
                }
 
                //wrong
                if (checkList[0] == 0)
                {
-                  Turn4Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn4Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[1] == 0)
                {
-                  Turn4Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn4Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[2] == 0)
                {
-                  Turn4Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn4Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[3] == 0)
                {
-                  Turn4Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn4Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[4] == 0)
                {
-                  Turn4Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn4Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
             }
             if (turn == 4)
@@ -613,48 +623,49 @@ namespace WordleFinal
                }
                if (checkList[4] == 1)
                {
-                  Turn5Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
+                  Turn5Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e0e31e"));
                }
 
                //wrong
                if (checkList[0] == 0)
                {
-                  Turn5Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn5Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[1] == 0)
                {
-                  Turn5Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn5Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[2] == 0)
                {
-                  Turn5Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn5Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[3] == 0)
                {
-                  Turn5Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn5Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
                if (checkList[4] == 0)
                {
-                  Turn5Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#eda164"));
+                  Turn5Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#e34230"));
                }
             }
             turn++;
 
          }
       }
+      //see if the guess is correct
       private bool isCorrect()
       {
          String userGuessWord = func.getUserWord();
          String setGuessWord = func.getGuessString();
 
-         if(userGuessWord.Equals(setGuessWord))
+         if (userGuessWord.Equals(setGuessWord))
          {
             return true;
          }
 
          return false;
       }
-
+      //get each letter from the boxes based on the turn
       private int[] getChecklist(int turn)
       {
          String letterOne = "";
@@ -708,12 +719,56 @@ namespace WordleFinal
          }
 
          func.buildList(letterOne, letterTwo, letterThree, letterFour, letterFive);
-         if(isCorrect())
+         if (isCorrect())
          {
+            //set the letters to green
+            switch (turn)
+            {
+               case 1:
+                  Turn1Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn1Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn1Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn1Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn1Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  break;
+
+               case 2:
+                  Turn2Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn2Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn2Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn2Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn2Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  break;
+
+               case 3:
+                  Turn3Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn3Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn3Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn3Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn3Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  break;
+
+               case 4:
+                  Turn4Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn4Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn4Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn4Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn4Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  break;
+
+               case 5:
+                  Turn5Letter1.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn5Letter2.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn5Letter3.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn5Letter4.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  Turn5Letter5.Background = new SolidColorBrush((Color)System.Windows.Media.ColorConverter.ConvertFromString("#239e40"));
+                  break;
+
+            }
             MessageBox.Show("Congratulations you guessed the correct word!", "Winner!");
-            //System.Windows.Application.Current.Shutdown();
+            //exit application
+            System.Windows.Application.Current.Shutdown();
          }
-         
 
          return func.checkWord();
       }
